@@ -10,7 +10,10 @@ repositories {
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.10.0')
+    implementation("org.opensearch.client:opensearch-rest-high-level-client:3.1.0")
+    implementation("org.apache.kafka:kafka-clients:4.0.0")
+    implementation("com.google.code.gson:gson:2.13.1")
+    testImplementation platform('org.junit:junit-bom:5.11.4')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
 
